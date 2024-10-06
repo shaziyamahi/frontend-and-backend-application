@@ -1,0 +1,90 @@
+extends userLayout 
+
+block content-head 
+    title Library Dashboard
+  
+block content-body 
+  .main-content
+    .landing
+      h1 Welcome back, #{user.first_name}!
+
+      .quick-actions
+        .action-card View Borrowed Books
+        .action-card Recent Returns
+        .action-card New Arrivals
+        .action-card Book Recommendations
+        .action-card View Reading History
+
+      .promo-banner
+        h2 Check out our latest library offers!
+        .promo-cards
+          .promo-card
+            h3 Book of the Month
+            p Discover our featured book this month and enjoy a special reading program!
+            button.promo-btn Learn More
+          .promo-card
+            h3 Free Workshops
+            p Join our free workshops on writing, literature, and more!
+            button.promo-btn Learn More
+          .promo-card
+            h3 Reading Challenges
+            p Participate in our reading challenges and win exciting prizes!
+            button.promo-btn Learn More
+          .promo-card
+            h3 Refer a Friend
+            p Refer a friend to the library and both of you get bonus points!
+            button.promo-btn Learn More
+
+    .user-tips
+      h2 Library Tips
+      ul
+        li Always check the return dates for borrowed books.
+        li Explore different genres to expand your reading.
+        li Join book clubs for discussions and recommendations.
+        li Utilize online resources for research and reading.
+
+    .news-section
+      h2 Latest Library News
+      p Stay informed about the latest library events, new book arrivals, and special programs. 
+        a(href="#") Read more...
+
+    .faq-section
+      h2 Frequently Asked Questions
+      .accordion
+        .accordion-item
+          .accordion-header
+            span What is the borrowing policy?
+            button.accordion-icon + 
+          .accordion-content
+            p Each member can borrow up to 5 books at a time for a period of 3 weeks.
+        .accordion-item
+          .accordion-header
+            span How do I renew my books?
+            button.accordion-icon + 
+          .accordion-content
+            p You can renew your books online by logging into your account or by visiting the library.
+        .accordion-item
+          .accordion-header
+            span What should I do if I lost a book?
+            button.accordion-icon + 
+          .accordion-content
+            p If you lose a book, please report it to the library staff as soon as possible for further assistance.
+        .accordion-item
+          .accordion-header
+            span How can I contact library support?
+            button.accordion-icon + 
+          .accordion-content
+            p You can reach our support team via email at support@library.com or call us at 1-800-555-6789.
+        .accordion-item
+          .accordion-header
+            span What resources does the library offer?
+            button.accordion-icon + 
+          .accordion-content
+            p The library offers a wide range of books, eBooks, audiobooks, research databases, and community programs.
+
+    .feedback-section
+      p We value your feedback! 
+      button.feedback-btn Give Feedback
+
+    include userFooter 
+  button.scroll-to-top(id="scrollToTopBtn") ↑

@@ -1,0 +1,107 @@
+[
+  {
+    "first_name": "John",
+    "last_name": "Doe",
+    "email": "john.doe@example.com",
+    "password": "abc123",
+    "phone": "9876543211"
+  },
+  {
+    "first_name": "Alice",
+    "last_name": "Smith",
+    "email": "alice.smith@example.com",
+    "password": "xyz789",
+    "phone": "9456123789"
+  },
+  {
+    "first_name": "Michael",
+    "last_name": "Johnson",
+    "email": "m.johnson@example.com",
+    "password": "mike123",
+    "phone": "8765432109"
+  },
+  {
+    "first_name": "Sophia",
+    "last_name": "Brown",
+    "email": "sophia.brown@example.com",
+    "password": "password321",
+    "phone": "9638527410"
+  },
+  {
+    "first_name": "James",
+    "last_name": "Williams",
+    "email": "james.williams@example.com",
+    "password": "secret123",
+    "phone": "8523697412"
+  },
+  {
+    "first_name": "Emily",
+    "last_name": "Davis",
+    "email": "emily.davis@example.com",
+    "password": "pass456",
+    "phone": "7412589630"
+  },
+  {
+    "first_name": "David",
+    "last_name": "Martinez",
+    "email": "david.martinez@example.com",
+    "password": "davidpass",
+    "phone": "7894561230"
+  },
+  {
+    "first_name": "Olivia",
+    "last_name": "Garcia",
+    "email": "olivia.garcia@example.com",
+    "password": "olivia78",
+    "phone": "9871234560"
+  },
+  {
+    "first_name": "Daniel",
+    "last_name": "Rodriguez",
+    "email": "daniel.rodriguez@example.com",
+    "password": "danpass123",
+    "phone": "7896541230"
+  },
+  {
+    "first_name": "Emma",
+    "last_name": "Wilson",
+    "email": "emma.wilson@example.com",
+    "password": "emma321",
+    "phone": "9873216540"
+  },
+  {
+    "first_name": "Jacob",
+    "last_name": "Moore",
+    "email": "jacob.moore@example.com",
+    "password": "jacob12",
+    "phone": "8521479630"
+  },
+  {
+    "first_name": "Grace",
+    "last_name": "Taylor",
+    "email": "grace.taylor@example.com",
+    "password": "gracepass",
+    "phone": "9517538246"
+  },
+  {
+    "first_name": "Ethan",
+    "last_name": "Anderson",
+    "email": "ethan.anderson@example.com",
+    "password": "ethan789",
+    "phone": "9876543256"
+  },
+  {
+    "first_name": "Lily",
+    "last_name": "Thomas",
+    "email": "lily.thomas@example.com",
+    "password": "lily456",
+    "phone": "7894561234"
+  },
+  {
+    "first_name": "Jack",
+    "last_name": "Walker",
+    "email": "jack.walker@example.com",
+    "password": "jack678",
+    "phone": "9123456789"
+  }
+]

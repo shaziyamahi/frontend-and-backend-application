@@ -1,0 +1,39 @@
+extends layout 
+
+block content-head 
+  title Welcome to Library of Libraries
+  
+block content-body 
+  section.hero
+    h1 Discover Your Next Read!
+
+  section.search-section
+    .search-form
+      h2 Search for Books
+      form(action="/search_books" method="post")
+        select(name="category" required)
+          option(value="" disabled selected) Select Category
+          each category in categories
+            option(value=category.name) #{category.name}
+        
+        input(type="text" name="title" placeholder="Book Title" required)
+        
+        input(type="text" name="author" placeholder="Author Name" required)
+
+        input(type="date" name="publication_date" placeholder="Publication Date" required)
+        
+        button(type="submit") Search Books
+
+  section.features
+    .feature
+      img(src="./assets/img/easy_booking.jpg" alt="Easy Booking")
+      h3 Easy Borrowing
+      p Borrow books with just a few clicks.
+    .feature
+      img(src="./assets/img/best_price.jpg" alt="Best Books")
+      h3 Curated Collection
+      p Explore our collection of the best books across genres.
+    .feature
+      img(src="./assets/img/support.jpg" alt="24/7 Support")
+      h3 24/7 Support
+      p Our team is here to assist you anytime, anywhere.

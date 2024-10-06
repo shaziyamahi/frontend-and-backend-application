@@ -1,0 +1,22 @@
+extends layout 
+
+block content-head 
+    title Book Search Results
+
+block content-body 
+  #main-content
+    if books.length > 0
+      section.result-section
+        h2 Available Books
+
+        each book in books
+          .result-card
+            h3= book.title
+            p Author: #{book.author}
+            p Category: #{book.category}
+            p Availability: #{book.available ? 'Available' : 'Not Available'}
+            button Borrow Now
+    else
+      section.no-results
+        h2 No Books Found
+        p Sorry, no books match your search for "#{searchQuery}".

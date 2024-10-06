@@ -1,0 +1,33 @@
+extends layout
+
+block content-head
+  title Book Details
+
+block content-body
+  section.book-details
+    h1 Book Information
+
+    .book-card-container
+      if books.length > 0 
+        each book in books
+          .book-card
+            .book-header
+              h2 Book Title: #{book.title}
+              p Author: #{book.author.name}
+              p Category: #{book.category}
+            .book-body
+              p Branch: #{book.issued.branch}
+              p Price: $#{book.price}
+              p Status: #{book.book_status}
+            .book-footer
+              if book.book_status == 'available'
+                a(href="/reserve/#{book.book_id}") Reserve 
+              else
+                a(href="/waitlist/#{book.book_id}") Join Waitlist
+      else 
+        .book-card 
+          h2 No Books Found
+          p Sorry, no books match your search.
+
+    // Back to search form button
+    a(href="/") Back to Search
